@@ -13,6 +13,25 @@
 		52A8635D25754DCB00B4FF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A8635B25754DCB00B4FF5D /* Main.storyboard */; };
 		52A8635F25754DCC00B4FF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A8635E25754DCC00B4FF5D /* Assets.xcassets */; };
 		52A8636225754DCC00B4FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A8636025754DCC00B4FF5D /* LaunchScreen.storyboard */; };
+		52A8636B25754DE800B4FF5D /* EditScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8636A25754DE800B4FF5D /* EditScanViewController.swift */; };
+		52A8636E25754E4E00B4FF5D /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8636D25754E4E00B4FF5D /* Quadrilateral.swift */; };
+		52A8637125754E9E00B4FF5D /* Transformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8637025754E9E00B4FF5D /* Transformable.swift */; };
+		52A8637825754F4400B4FF5D /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8637725754F4400B4FF5D /* CGPoint+Utils.swift */; };
+		52A8637B25754F9100B4FF5D /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8637A25754F9100B4FF5D /* RectangleView.swift */; };
+		52A8637E25754FC800B4FF5D /* EditScanCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8637D25754FC800B4FF5D /* EditScanCornerView.swift */; };
+		52A863812575501900B4FF5D /* CGAffineTransform+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A863802575501900B4FF5D /* CGAffineTransform+Utils.swift */; };
+		52A86384257550CE00B4FF5D /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A86383257550CE00B4FF5D /* UIImage+Orientation.swift */; };
+		52A863872575541800B4FF5D /* ImageScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A863862575541800B4FF5D /* ImageScannerController.swift */; };
+		52A8638A2575561600B4FF5D /* VisionRectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A863892575561600B4FF5D /* VisionRectangleDetector.swift */; };
+		52A8638D2575565300B4FF5D /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8638C2575565300B4FF5D /* Array+Utils.swift */; };
+		52A863902575567F00B4FF5D /* RectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8638F2575567F00B4FF5D /* RectangleDetector.swift */; };
+		52A86393257556EA00B4FF5D /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A86392257556EA00B4FF5D /* UIImage+Utils.swift */; };
+		52A863962575572800B4FF5D /* CGSize+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A863952575572800B4FF5D /* CGSize+Utils.swift */; };
+		52A8639925755B2300B4FF5D /* ZoomGestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8639825755B2300B4FF5D /* ZoomGestureController.swift */; };
+		52A8639C25755E3800B4FF5D /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8639B25755E3800B4FF5D /* CaptureSession.swift */; };
+		52A8639F25755E6300B4FF5D /* CaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8639E25755E6300B4FF5D /* CaptureDevice.swift */; };
+		52A863A225755EBE00B4FF5D /* CIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A863A125755EBE00B4FF5D /* CIImage+Utils.swift */; };
+		52A863A525755EFF00B4FF5D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A863A425755EFF00B4FF5D /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +43,25 @@
 		52A8635E25754DCC00B4FF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52A8636125754DCC00B4FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52A8636325754DCC00B4FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A8636A25754DE800B4FF5D /* EditScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditScanViewController.swift; sourceTree = "<group>"; };
+		52A8636D25754E4E00B4FF5D /* Quadrilateral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadrilateral.swift; sourceTree = "<group>"; };
+		52A8637025754E9E00B4FF5D /* Transformable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformable.swift; sourceTree = "<group>"; };
+		52A8637725754F4400B4FF5D /* CGPoint+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Utils.swift"; sourceTree = "<group>"; };
+		52A8637A25754F9100B4FF5D /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		52A8637D25754FC800B4FF5D /* EditScanCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScanCornerView.swift; sourceTree = "<group>"; };
+		52A863802575501900B4FF5D /* CGAffineTransform+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+Utils.swift"; sourceTree = "<group>"; };
+		52A86383257550CE00B4FF5D /* UIImage+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation.swift"; sourceTree = "<group>"; };
+		52A863862575541800B4FF5D /* ImageScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScannerController.swift; sourceTree = "<group>"; };
+		52A863892575561600B4FF5D /* VisionRectangleDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionRectangleDetector.swift; sourceTree = "<group>"; };
+		52A8638C2575565300B4FF5D /* Array+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
+		52A8638F2575567F00B4FF5D /* RectangleDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleDetector.swift; sourceTree = "<group>"; };
+		52A86392257556EA00B4FF5D /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		52A863952575572800B4FF5D /* CGSize+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Utils.swift"; sourceTree = "<group>"; };
+		52A8639825755B2300B4FF5D /* ZoomGestureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomGestureController.swift; sourceTree = "<group>"; };
+		52A8639B25755E3800B4FF5D /* CaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
+		52A8639E25755E6300B4FF5D /* CaptureDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDevice.swift; sourceTree = "<group>"; };
+		52A863A125755EBE00B4FF5D /* CIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Utils.swift"; sourceTree = "<group>"; };
+		52A863A425755EFF00B4FF5D /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +75,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5226ECAD25762DEF00ACE114 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				52A8635525754DCB00B4FF5D /* AppDelegate.swift */,
+				52A8635725754DCB00B4FF5D /* SceneDelegate.swift */,
+				52A8635B25754DCB00B4FF5D /* Main.storyboard */,
+				52A8635E25754DCC00B4FF5D /* Assets.xcassets */,
+				52A8636025754DCC00B4FF5D /* LaunchScreen.storyboard */,
+				52A8636325754DCC00B4FF5D /* Info.plist */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		5226ECB025762F0A00ACE114 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52A86392257556EA00B4FF5D /* UIImage+Utils.swift */,
+				52A863952575572800B4FF5D /* CGSize+Utils.swift */,
+				52A863A125755EBE00B4FF5D /* CIImage+Utils.swift */,
+				52A8637725754F4400B4FF5D /* CGPoint+Utils.swift */,
+				52A8638C2575565300B4FF5D /* Array+Utils.swift */,
+				52A863802575501900B4FF5D /* CGAffineTransform+Utils.swift */,
+				52A86383257550CE00B4FF5D /* UIImage+Orientation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5226ECB125762F1100ACE114 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52A8635925754DCB00B4FF5D /* ViewController.swift */,
+				52A863862575541800B4FF5D /* ImageScannerController.swift */,
+				52A8636A25754DE800B4FF5D /* EditScanViewController.swift */,
+				52A8639825755B2300B4FF5D /* ZoomGestureController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5226ECB225762F9F00ACE114 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				52A8638F2575567F00B4FF5D /* RectangleDetector.swift */,
+				52A863892575561600B4FF5D /* VisionRectangleDetector.swift */,
+				52A863A425755EFF00B4FF5D /* Error.swift */,
+				52A8636D25754E4E00B4FF5D /* Quadrilateral.swift */,
+				52A8637A25754F9100B4FF5D /* RectangleView.swift */,
+				52A8637D25754FC800B4FF5D /* EditScanCornerView.swift */,
+				52A8639B25755E3800B4FF5D /* CaptureSession.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5226ECB325762FD500ACE114 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				52A8639E25755E6300B4FF5D /* CaptureDevice.swift */,
+				52A8637025754E9E00B4FF5D /* Transformable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		52A8634925754DCB00B4FF5D = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +155,11 @@
 		52A8635425754DCB00B4FF5D /* ScanEditor */ = {
 			isa = PBXGroup;
 			children = (
-				52A8635525754DCB00B4FF5D /* AppDelegate.swift */,
-				52A8635725754DCB00B4FF5D /* SceneDelegate.swift */,
-				52A8635925754DCB00B4FF5D /* ViewController.swift */,
-				52A8635B25754DCB00B4FF5D /* Main.storyboard */,
-				52A8635E25754DCC00B4FF5D /* Assets.xcassets */,
-				52A8636025754DCC00B4FF5D /* LaunchScreen.storyboard */,
-				52A8636325754DCC00B4FF5D /* Info.plist */,
+				5226ECB325762FD500ACE114 /* Protocols */,
+				5226ECB225762F9F00ACE114 /* Common */,
+				5226ECB125762F1100ACE114 /* Views */,
+				5226ECB025762F0A00ACE114 /* Extensions */,
+				5226ECAD25762DEF00ACE114 /* Environment */,
 			);
 			path = ScanEditor;
 			sourceTree = "<group>";
@@ -137,9 +234,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A863872575541800B4FF5D /* ImageScannerController.swift in Sources */,
 				52A8635A25754DCB00B4FF5D /* ViewController.swift in Sources */,
+				52A863A225755EBE00B4FF5D /* CIImage+Utils.swift in Sources */,
+				52A8639F25755E6300B4FF5D /* CaptureDevice.swift in Sources */,
+				52A8639C25755E3800B4FF5D /* CaptureSession.swift in Sources */,
+				52A8636B25754DE800B4FF5D /* EditScanViewController.swift in Sources */,
+				52A863962575572800B4FF5D /* CGSize+Utils.swift in Sources */,
+				52A863902575567F00B4FF5D /* RectangleDetector.swift in Sources */,
 				52A8635625754DCB00B4FF5D /* AppDelegate.swift in Sources */,
 				52A8635825754DCB00B4FF5D /* SceneDelegate.swift in Sources */,
+				52A8638D2575565300B4FF5D /* Array+Utils.swift in Sources */,
+				52A8637125754E9E00B4FF5D /* Transformable.swift in Sources */,
+				52A863812575501900B4FF5D /* CGAffineTransform+Utils.swift in Sources */,
+				52A8637E25754FC800B4FF5D /* EditScanCornerView.swift in Sources */,
+				52A863A525755EFF00B4FF5D /* Error.swift in Sources */,
+				52A8637825754F4400B4FF5D /* CGPoint+Utils.swift in Sources */,
+				52A86393257556EA00B4FF5D /* UIImage+Utils.swift in Sources */,
+				52A8637B25754F9100B4FF5D /* RectangleView.swift in Sources */,
+				52A8638A2575561600B4FF5D /* VisionRectangleDetector.swift in Sources */,
+				52A8636E25754E4E00B4FF5D /* Quadrilateral.swift in Sources */,
+				52A8639925755B2300B4FF5D /* ZoomGestureController.swift in Sources */,
+				52A86384257550CE00B4FF5D /* UIImage+Orientation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +404,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PTYV272Z4;
-				INFOPLIST_FILE = ScanEditor/Info.plist;
+				INFOPLIST_FILE = ScanEditor/Environment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PTYV272Z4;
-				INFOPLIST_FILE = ScanEditor/Info.plist;
+				INFOPLIST_FILE = ScanEditor/Environment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
