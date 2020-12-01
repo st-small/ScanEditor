@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.author       = "Stanislav Shiyanovskiy"
     
   spec.platform     = :ios, "13.0"
+  spec.swift_version = '5'
 
   spec.source       = { :git => "https://github.com/st-small/ScanEditor.git", :tag => "#{spec.version}" }
 
