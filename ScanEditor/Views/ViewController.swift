@@ -73,6 +73,6 @@ extension ViewController: ImageScannerDelegate {
     }
     
     func imageScannerController(_ error: Error) {
-        #warning("Add messages alert support!")
+       // #warning("Add messages alert support!")
     }
 }

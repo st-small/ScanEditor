@@ -408,6 +408,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PTYV272Z4;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					CI_SILENCE_GL_DEPRECATION,
+				);
 				INFOPLIST_FILE = ScanEditor/Environment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
