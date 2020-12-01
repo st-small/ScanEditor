@@ -16,7 +16,7 @@ public struct QuadConfigurator {
 }
 
 /// The `EditScanViewController` offers an interface for the user to edit the detected quadrilateral.
-final class EditScanViewController: UIViewController {
+public final class EditScanViewController: UIViewController {
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -36,6 +36,7 @@ final class EditScanViewController: UIViewController {
         quadView.strokeWidth = quadConfigurator.quadStrokeWidth
         quadView.fillColor = quadConfigurator.quadFillColor.cgColor
         quadView.translatesAutoresizingMaskIntoConstraints = false
+        quadView.delegate = self
         return quadView
     }()
     
@@ -60,7 +61,7 @@ final class EditScanViewController: UIViewController {
     
     // MARK: - Life Cycle
     
-    init(image: UIImage, rotateImage: Bool = true, initialImage: UIImage? = nil, configurator: QuadConfigurator = QuadConfigurator(), delegate: ImageScannerDelegate? = nil) {
+    public init(image: UIImage, rotateImage: Bool = true, initialImage: UIImage? = nil, configurator: QuadConfigurator = QuadConfigurator(), delegate: ImageScannerDelegate? = nil) {
         self.image = rotateImage ? image.applyingPortraitOrientation() : image
         self.initialImage = initialImage
         self.quadConfigurator = configurator
@@ -215,4 +216,11 @@ final class EditScanViewController: UIViewController {
         return quad
     }
     
+}
+
+// MARK: - QuadrilateralViewDelegate
+extension EditScanViewController: QuadrilateralViewDelegate {
+    public func cornersWereUpdated() {
+        imageScannerDelegate?.cornersWereUpdated()
+    }
 }

@@ -10,6 +10,8 @@ import UIKit
 /// A set of methods that your delegate object must implement to interact with the image scanner interface.
 public protocol ImageScannerDelegate: NSObjectProtocol {
     
+    func cornersWereUpdated()
+    
     /// Tells the delegate that the user scanned a document.
     ///
     /// - Parameters:

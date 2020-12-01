@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let image = UIImage(named: "sample") else { return }
+        guard let image = UIImage(named: "sample3") else { return }
         addScannerView(image: image)
         
         let cropButton = UIButton(type: .system)
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
     private func addScannerView(image: UIImage, initial: UIImage? = nil) {
         removeUnusedScannerViews()
-        let configurator = QuadConfigurator(quadFillColor: UIColor.clear)
+        let configurator = QuadConfigurator(quadStrokeColor: UIColor.red, quadStrokeWidth: 2, quadFillColor: UIColor.red)
         editViewController = EditScanViewController(image: image, rotateImage: false, initialImage: initial, configurator: configurator, delegate: self)
         view.addSubview(editViewController.view)
         editViewController.view.translatesAutoresizingMaskIntoConstraints = false
@@ -64,6 +64,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: ImageScannerDelegate {
+    func cornersWereUpdated() {
+        
+    }
+    
     func imageScannerController(_ results: ImageScannerResults) {
         addScannerView(image: results.croppedScan.image, initial: results.originalScan.image)
     }

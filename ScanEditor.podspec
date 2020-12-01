@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ScanEditor"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "ScanEditor will help to select cropping element from images and photos using corner points"
 
   spec.license      = { :type => "MIT", :file => "LICENSE" }

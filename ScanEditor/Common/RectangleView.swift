@@ -9,6 +9,10 @@ enum CornerPosition {
     case bottomLeft
 }
 
+public protocol QuadrilateralViewDelegate: class {
+    func cornersWereUpdated()
+}
+
 /// The `QuadrilateralView` is a simple `UIView` subclass that can draw a quadrilateral, and optionally edit it.
 final class QuadrilateralView: UIView {
     
@@ -106,6 +110,8 @@ final class QuadrilateralView: UIView {
     
     private let highlightedCornerViewSize = CGSize(width: 75.0, height: 75.0)
     private let cornerViewSize = CGSize(width: 20.0, height: 20.0)
+    
+    public weak var delegate: QuadrilateralViewDelegate?
     
     // MARK: - Life Cycle
     
