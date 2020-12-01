@@ -14,11 +14,8 @@ final class QuadrilateralView: UIView {
     
     private let quadLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
-        //layer.strokeColor = UIColor.white.cgColor
-        //layer.lineWidth = 1.0
         layer.opacity = 1.0
         layer.isHidden = true
-        
         return layer
     }()
     
@@ -37,7 +34,9 @@ final class QuadrilateralView: UIView {
     public var editable = false {
         didSet {
             cornerViews(hidden: !editable)
-            quadLayer.fillColor = editable ? UIColor(white: 0.0, alpha: 0.6).cgColor : UIColor(white: 1.0, alpha: 0.5).cgColor
+            if editable {
+                quadLayer.fillColor = UIColor(displayP3Red: 78/255, green: 64/255, blue: 231/255, alpha: 0.25).cgColor
+            } 
             guard let quad = quad else {
                 return
             }
@@ -57,12 +56,34 @@ final class QuadrilateralView: UIView {
         }
     }
     
+    /// Set stroke width of image rect and corner.
+    public var strokeWidth: CGFloat? {
+        didSet {
+            quadLayer.lineWidth = strokeWidth ?? 1
+            topLeftCornerView.strokeWidth = strokeWidth
+            topRightCornerView.strokeWidth = strokeWidth
+            bottomRightCornerView.strokeWidth = strokeWidth
+            bottomLeftCornerView.strokeWidth = strokeWidth
+        }
+    }
+    
+    /// Set fill color of image rect and corner.
+    public var fillColor: CGColor? {
+        didSet {
+            quadLayer.fillColor = fillColor?.copy(alpha: 0.25)
+            topLeftCornerView.fillColor = fillColor
+            topRightCornerView.fillColor = fillColor
+            bottomRightCornerView.fillColor = fillColor
+            bottomLeftCornerView.fillColor = fillColor
+        }
+    }
+    
     private var isHighlighted = false {
         didSet (oldValue) {
             guard oldValue != isHighlighted else {
                 return
             }
-            quadLayer.fillColor = isHighlighted ? UIColor.clear.cgColor : UIColor(white: 0.0, alpha: 0.6).cgColor
+            quadLayer.fillColor = isHighlighted ? UIColor.clear.cgColor : fillColor?.copy(alpha: 0.25)
             isHighlighted ? bringSubviewToFront(quadView) : sendSubviewToBack(quadView)
         }
     }
@@ -154,8 +175,6 @@ final class QuadrilateralView: UIView {
         
         if editable {
             path = path.reversing()
-            let rectPath = UIBezierPath(rect: bounds)
-            path.append(rectPath)
         }
         
         if animated == true {

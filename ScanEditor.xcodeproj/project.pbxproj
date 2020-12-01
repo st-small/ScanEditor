@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5226ECB825763CE700ACE114 /* ImageScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226ECB725763CE700ACE114 /* ImageScannerDelegate.swift */; };
 		52A8635625754DCB00B4FF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8635525754DCB00B4FF5D /* AppDelegate.swift */; };
 		52A8635825754DCB00B4FF5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8635725754DCB00B4FF5D /* SceneDelegate.swift */; };
 		52A8635A25754DCB00B4FF5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A8635925754DCB00B4FF5D /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5226ECB725763CE700ACE114 /* ImageScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScannerDelegate.swift; sourceTree = "<group>"; };
 		52A8635225754DCB00B4FF5D /* ScanEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A8635525754DCB00B4FF5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A8635725754DCB00B4FF5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				52A8639E25755E6300B4FF5D /* CaptureDevice.swift */,
 				52A8637025754E9E00B4FF5D /* Transformable.swift */,
+				5226ECB725763CE700ACE114 /* ImageScannerDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				52A863A525755EFF00B4FF5D /* Error.swift in Sources */,
 				52A8637825754F4400B4FF5D /* CGPoint+Utils.swift in Sources */,
 				52A86393257556EA00B4FF5D /* UIImage+Utils.swift in Sources */,
+				5226ECB825763CE700ACE114 /* ImageScannerDelegate.swift in Sources */,
 				52A8637B25754F9100B4FF5D /* RectangleView.swift in Sources */,
 				52A8638A2575561600B4FF5D /* VisionRectangleDetector.swift in Sources */,
 				52A8636E25754E4E00B4FF5D /* Quadrilateral.swift in Sources */,
