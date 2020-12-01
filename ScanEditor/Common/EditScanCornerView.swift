@@ -24,6 +24,20 @@ final class EditScanCornerView: UIView {
         }
     }
     
+    /// Set stroke width of coner layer
+    public var strokeWidth: CGFloat? {
+        didSet {
+            circleLayer.lineWidth = strokeWidth ?? 1
+        }
+    }
+    
+    /// Set stroke fill color of coner layer
+    public var fillColor: CGColor? {
+        didSet {
+            circleLayer.fillColor = fillColor
+        }
+    }
+    
     init(frame: CGRect, position: CornerPosition) {
         self.position = position
         super.init(frame: frame)
@@ -53,6 +67,7 @@ final class EditScanCornerView: UIView {
     
     func highlightWithImage(_ image: UIImage) {
         isHighlighted = true
+        circleLayer.fillColor = UIColor.clear.cgColor
         self.image = image
         self.setNeedsDisplay()
     }
@@ -60,6 +75,7 @@ final class EditScanCornerView: UIView {
     func reset() {
         isHighlighted = false
         image = nil
+        circleLayer.fillColor = fillColor
         setNeedsDisplay()
     }
     

@@ -10,6 +10,8 @@ public enum ImageScannerControllerError: Error {
     case capture
     /// Error when creating the CIImage.
     case ciImageCreation
+    /// Error when no initial images were found
+    case noInitialImage
 }
 
 extension ImageScannerControllerError: LocalizedError {
@@ -24,6 +26,8 @@ extension ImageScannerControllerError: LocalizedError {
             return "Could not capture picture."
         case .ciImageCreation:
             return "Internal Error - Could not create CIImage"
+        case .noInitialImage:
+            return "Could not found initial picture to reset state."
         }
     }
 
