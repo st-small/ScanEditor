@@ -219,6 +219,7 @@ final class QuadrilateralView: UIView {
         
         self.quad = updatedQuad
         drawQuad(updatedQuad, animated: false)
+        delegate?.cornersWereUpdated()
     }
     
     func highlightCornerAtPosition(position: CornerPosition, with image: UIImage) {
